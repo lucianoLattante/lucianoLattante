@@ -13,6 +13,17 @@ Backend Software Engineer en Santa Fe, Argentina, con más de cuatro años de ex
 | Aufiero Informática | Mayo–agosto de 2022 | Java 8, Groovy, Grails y SQL |
 | Casimiro Zbikoski | Diciembre de 2021–febrero de 2022 | Desarrollo full stack con Java, Spring Framework y SQL Server |
 
+## Proyecto personal destacado
+
+**[CommerceFlow — backend de procesamiento de e-commerce](https://github.com/lucianoLattante/commerceflow)**  
+Monolito modular original con Java 21, Spring Boot, MySQL, Kafka y Redis. Su MVP local funcional incluye reservas transaccionales de stock, idempotencia por usuario, outbox/inbox, pagos simulados, recuperación ADMIN auditada y administración de usuarios/productos.
+
+[CI verificada](https://github.com/lucianoLattante/commerceflow/actions/runs/44104045854): **122 pruebas unitarias + 160 de integración MySQL/Kafka/Redis aprobadas**, además de Docker Compose y el recorrido HTTP real. Son resultados de verificación del proyecto, no métricas de rendimiento productivo.
+
+[Arquitectura](https://github.com/lucianoLattante/commerceflow/blob/main/docs/ARCHITECTURE.md) · [Caso de estudio](https://github.com/lucianoLattante/commerceflow/blob/main/docs/CASE_STUDY.md) · [Probar en local con Swagger](https://github.com/lucianoLattante/commerceflow/blob/main/docs/LOCAL_TESTING.es.md)
+
+Es código personal de portfolio, separado del trabajo para el empleador. Los pagos son simulados; no se afirma despliegue productivo ni capacidad medida.
+
 ## Proyectos colaborativos
 
 **[Somos Más — API para una ONG](https://github.com/lucianoLattante/OT167-Java-server)**  
@@ -29,8 +40,9 @@ Mantenimiento reciente de OT167: [documentación](https://github.com/lucianoLatt
 
 - Experiencia laboral: Java, Spring Boot, Spring Framework, Quarkus, Node.js, APIs REST, MySQL, PostgreSQL, SQL Server y DynamoDB.
 - Intereses de ingeniería: modelado de dominio, consistencia transaccional, sistemas distribuidos y procesamiento asíncrono confiable.
+- Demostrado en proyectos personales: Kafka, Redis, outbox/inbox, Testcontainers, Docker Compose y GitHub Actions.
 - Flujo de desarrollo: Git y herramientas de asistencia como Codex, Claude Code y Windsurf.
 
-Trabajo en un portfolio con decisiones de arquitectura explícitas y verificaciones reproducibles. Los nuevos proyectos se enlazarán cuando exista implementación disponible. No se presenta trabajo del empleador como código personal.
+Trabajo en un portfolio con decisiones de arquitectura explícitas y verificaciones reproducibles. CommerceFlow ya se enlaza arriba con evidencia ejecutada; los siguientes proyectos financieros/de IA se enlazarán cuando exista implementación. No se presenta trabajo del empleador como código personal.
 
 [English](README.md)
