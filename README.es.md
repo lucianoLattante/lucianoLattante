@@ -18,9 +18,9 @@ Backend Software Engineer en Santa Fe, Argentina, con más de cuatro años de ex
 **[CommerceFlow — backend de procesamiento de e-commerce](https://github.com/lucianoLattante/commerceflow)**  
 Monolito modular original con Java 21, Spring Boot, MySQL, Kafka y Redis. Su MVP local funcional incluye reservas transaccionales de stock, idempotencia por usuario, outbox/inbox, pagos simulados, recuperación ADMIN auditada y administración de usuarios/productos.
 
-[CI verificada](https://github.com/lucianoLattante/commerceflow/actions/runs/44104045854): **122 pruebas unitarias + 160 de integración MySQL/Kafka/Redis aprobadas**, además de Docker Compose y el recorrido HTTP real. Son resultados de verificación del proyecto, no métricas de rendimiento productivo.
+[GitHub Actions](https://github.com/lucianoLattante/commerceflow/actions/runs/45043457219) aprobó **128 pruebas unitarias y 160 de integración** con MySQL, Kafka y Redis. El flujo levanta la aplicación con Docker Compose y prueba el pago simulado por HTTP.
 
-[Arquitectura](https://github.com/lucianoLattante/commerceflow/blob/main/docs/ARCHITECTURE.md) · [Caso de estudio](https://github.com/lucianoLattante/commerceflow/blob/main/docs/CASE_STUDY.md) · [Probar en local con Swagger](https://github.com/lucianoLattante/commerceflow/blob/main/docs/LOCAL_TESTING.es.md)
+[Arquitectura](https://github.com/lucianoLattante/commerceflow/blob/main/docs/ARCHITECTURE.md) · [Caso de estudio](https://github.com/lucianoLattante/commerceflow/blob/main/docs/CASE_STUDY.md) · [Probar en local con Swagger](https://github.com/lucianoLattante/commerceflow/blob/main/docs/LOCAL_TESTING.es.md) · [Ejemplo de pago simulado](https://github.com/lucianoLattante/commerceflow/blob/main/docs/LOCAL_TESTING.es.md#7-pagar-y-consultar-la-evidencia)
 
 Es código personal de portfolio, separado del trabajo para el empleador. Los pagos son simulados; no se afirma despliegue productivo ni capacidad medida.
 

@@ -20,9 +20,9 @@ I work with Java and Spring Boot, building and maintaining backend services and 
 **[CommerceFlow — commerce processing backend](https://github.com/lucianoLattante/commerceflow)**  
 Original Java 21 / Spring Boot modular monolith with MySQL, Kafka and Redis. The local functional MVP includes transactional stock reservations, scoped idempotency, outbox/inbox processing, simulated payments, audited ADMIN recovery and role/catalog administration.
 
-[Verified CI](https://github.com/lucianoLattante/commerceflow/actions/runs/44104045854): **122 unit + 160 MySQL/Kafka/Redis integration tests passed**, plus Docker Compose startup and the real HTTP flow. These are project verification results, not production performance metrics.
+[GitHub Actions](https://github.com/lucianoLattante/commerceflow/actions/runs/45043457219) passed **128 unit tests and 160 integration tests** with MySQL, Kafka and Redis. The workflow starts the application with Docker Compose and exercises the simulated payment over HTTP.
 
-[Architecture](https://github.com/lucianoLattante/commerceflow/blob/main/docs/ARCHITECTURE.md) · [Decisions and case study](https://github.com/lucianoLattante/commerceflow/blob/main/docs/CASE_STUDY.md) · [Local demo](https://github.com/lucianoLattante/commerceflow/blob/main/docs/LOCAL_TESTING.es.md)
+[Architecture](https://github.com/lucianoLattante/commerceflow/blob/main/docs/ARCHITECTURE.md) · [Decisions and case study](https://github.com/lucianoLattante/commerceflow/blob/main/docs/CASE_STUDY.md) · [Local demo](https://github.com/lucianoLattante/commerceflow/blob/main/docs/LOCAL_TESTING.es.md) · [Simulated payment walkthrough](https://github.com/lucianoLattante/commerceflow/blob/main/docs/LOCAL_TESTING.es.md#7-pagar-y-consultar-la-evidencia)
 
 This is personal portfolio work, separate from employer systems. Payments are synthetic; no production deployment or capacity benchmark is claimed.
 
