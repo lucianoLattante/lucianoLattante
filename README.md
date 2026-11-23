@@ -22,7 +22,7 @@ Original Java 21 / Spring Boot modular monolith with MySQL, Kafka and Redis. The
 
 [GitHub Actions](https://github.com/lucianoLattante/commerceflow/actions/runs/45043457219) passed **128 unit tests and 160 integration tests** with MySQL, Kafka and Redis. The workflow starts the application with Docker Compose and exercises the simulated payment over HTTP.
 
-[Architecture](https://github.com/lucianoLattante/commerceflow/blob/main/docs/ARCHITECTURE.md) · [Decisions and case study](https://github.com/lucianoLattante/commerceflow/blob/main/docs/CASE_STUDY.md) · [Local demo](https://github.com/lucianoLattante/commerceflow/blob/main/docs/LOCAL_TESTING.es.md) · [Simulated payment walkthrough](https://github.com/lucianoLattante/commerceflow/blob/main/docs/LOCAL_TESTING.es.md#7-pagar-y-consultar-la-evidencia)
+[Architecture](https://github.com/lucianoLattante/commerceflow/blob/950b4c98f677847c48ec575ff3e2cd22ced22603/docs/ARCHITECTURE.md) · [Decisions and case study](https://github.com/lucianoLattante/commerceflow/blob/950b4c98f677847c48ec575ff3e2cd22ced22603/docs/CASE_STUDY.md) · [Local demo (Spanish)](https://github.com/lucianoLattante/commerceflow/blob/950b4c98f677847c48ec575ff3e2cd22ced22603/docs/LOCAL_TESTING.es.md) · [Simulated payment walkthrough (Spanish)](https://github.com/lucianoLattante/commerceflow/blob/950b4c98f677847c48ec575ff3e2cd22ced22603/docs/LOCAL_TESTING.es.md#7-pagar-y-consultar-la-evidencia)
 
 This is personal portfolio work, separate from employer systems. Payments are synthetic; no production deployment or capacity benchmark is claimed.
 
