@@ -31,7 +31,7 @@ API Java 21 y Spring Boot con PostgreSQL, asientos inmutables, idempotencia, rev
 API Java 21 con Spring AI y pgvector. La búsqueda ordena solo documentos de la organización y propietario autenticados, y el proveedor local devuelve extractos con citas. La suite de PostgreSQL verifica el aislamiento de las citas, la abstención y dos cargas que compiten por el último cupo de un límite configurable por propietario. [CI](https://github.com/lucianoLattante/knowledgeai/actions/runs/45620226691) · [Evaluación de recuperación](https://github.com/lucianoLattante/knowledgeai/blob/046993307578b52b4dcba5f61f9362d7951e9a82/docs/RETRIEVAL_EVALUATION.md)
 
 **[Portfolio web](https://lucianolattante.github.io/portfolio-web/)**  
-Portfolio bilingüe con CV descargable y referencias a código y pruebas. [Repositorio](https://github.com/lucianoLattante/portfolio-web) · [Verificación en main](https://github.com/lucianoLattante/portfolio-web/actions/runs/45623740170) · [Despliegue](https://github.com/lucianoLattante/portfolio-web/actions/runs/45656235308).
+Portfolio bilingüe con CV descargable y referencias a código y pruebas. [Repositorio](https://github.com/lucianoLattante/portfolio-web) · [Verificación en main](https://github.com/lucianoLattante/portfolio-web/actions/runs/45678046381) · [Despliegue](https://github.com/lucianoLattante/portfolio-web/actions/runs/45678373299).
 
 ## Proyectos colaborativos
 
