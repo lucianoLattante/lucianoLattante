@@ -18,20 +18,20 @@ Backend Software Engineer en Santa Fe, Argentina, con más de cuatro años de ex
 **[CommerceFlow — backend de procesamiento de e-commerce](https://github.com/lucianoLattante/commerceflow)**  
 Monolito modular original con Java 21, Spring Boot, MySQL, Kafka y Redis. Su MVP local funcional incluye reservas transaccionales de stock, idempotencia por usuario, outbox/inbox, pagos simulados, recuperación ADMIN auditada y administración de usuarios/productos.
 
-[GitHub Actions](https://github.com/lucianoLattante/commerceflow/actions/runs/45044196595) aprobó **128 pruebas unitarias y 160 de integración** con MySQL, Kafka y Redis. El flujo levanta la aplicación con Docker Compose y prueba el pago simulado por HTTP.
+CI aprobó **128 pruebas unitarias y 160 de integración** y ejecutó flujos de pedidos por HTTP en Docker Compose. Un experimento reproducible en MySQL con **50.000 entregas sintéticas** compara la paginación por offset y por cursor cuando cambian los estados confirmados y mide el costo de escritura del índice candidato. [CI](https://github.com/lucianoLattante/commerceflow/actions/runs/45541230478) · [Experimento](https://github.com/lucianoLattante/commerceflow/blob/cc82414bbcd5063e281d7e0e8baac4e9157ca70d/docs/CONTENTION.md)
 
-[Arquitectura](https://github.com/lucianoLattante/commerceflow/blob/950b4c98f677847c48ec575ff3e2cd22ced22603/docs/ARCHITECTURE.md) · [Caso de estudio](https://github.com/lucianoLattante/commerceflow/blob/950b4c98f677847c48ec575ff3e2cd22ced22603/docs/CASE_STUDY.md) · [Probar en local con Swagger](https://github.com/lucianoLattante/commerceflow/blob/950b4c98f677847c48ec575ff3e2cd22ced22603/docs/LOCAL_TESTING.es.md) · [Ejemplo de pago simulado](https://github.com/lucianoLattante/commerceflow/blob/950b4c98f677847c48ec575ff3e2cd22ced22603/docs/LOCAL_TESTING.es.md#7-pagar-y-consultar-la-evidencia)
+[Arquitectura](https://github.com/lucianoLattante/commerceflow/blob/cc82414bbcd5063e281d7e0e8baac4e9157ca70d/docs/ARCHITECTURE.md) · [Caso de estudio](https://github.com/lucianoLattante/commerceflow/blob/cc82414bbcd5063e281d7e0e8baac4e9157ca70d/docs/CASE_STUDY.md) · [Probar en local con Swagger](https://github.com/lucianoLattante/commerceflow/blob/cc82414bbcd5063e281d7e0e8baac4e9157ca70d/docs/LOCAL_TESTING.es.md) · [Ejemplo de pago simulado](https://github.com/lucianoLattante/commerceflow/blob/cc82414bbcd5063e281d7e0e8baac4e9157ca70d/docs/LOCAL_TESTING.es.md#7-pagar-y-consultar-la-evidencia)
 
 Es código personal de portfolio, separado del trabajo para el empleador. Los pagos son simulados; no se afirma despliegue productivo ni capacidad medida.
 
 **[LedgerCore — transferencias simuladas](https://github.com/lucianoLattante/ledgercore)**  
-API Java 21 y Spring Boot con PostgreSQL, asientos inmutables, idempotencia y reversos compensatorios. El [CI de main](https://github.com/lucianoLattante/ledgercore/actions/runs/45241679509) verificó débitos concurrentes y rollback con Testcontainers. [Decisión de diseño](https://github.com/lucianoLattante/ledgercore/blob/c6e26ff281e4bb80c72b25d10ba6ac2af74998d1/docs/adr-001-transfer-journal.md).
+API Java 21 y Spring Boot con PostgreSQL, asientos inmutables, idempotencia, reversos compensatorios y reconciliación por cuenta. Las pruebas de integración ejecutan la API con un usuario de base de datos restringido y aplican las migraciones Flyway con otro usuario. [CI](https://github.com/lucianoLattante/ledgercore/actions/runs/45541202715) · [Roles de base de datos](https://github.com/lucianoLattante/ledgercore/blob/afe6f05b5dce9c22b15b6226c06ae92b3a60daba/docs/DATABASE_ROLES.md) · [Decisión de diseño](https://github.com/lucianoLattante/ledgercore/blob/afe6f05b5dce9c22b15b6226c06ae92b3a60daba/docs/adr-001-transfer-journal.md)
 
 **[KnowledgeAI — búsqueda documental privada](https://github.com/lucianoLattante/knowledgeai)**  
-API Java 21 con Spring AI y pgvector. Aplica aislamiento por organización y propietario antes del ranking. El proveedor local devuelve extractos con citas. [CI de main](https://github.com/lucianoLattante/knowledgeai/actions/runs/45246199593) · [Decisión de diseño](https://github.com/lucianoLattante/knowledgeai/blob/2bd50a4bd8819921ba3b45d06395abbc91ca2831/docs/adr-001-local-retrieval.md).
+API Java 21 con Spring AI y pgvector. La búsqueda ordena solo documentos de la organización y propietario autenticados, y el proveedor local devuelve extractos con citas. La suite de PostgreSQL verifica el aislamiento de las citas, la abstención y dos cargas que compiten por el último cupo de un límite configurable por propietario. [CI](https://github.com/lucianoLattante/knowledgeai/actions/runs/45620226691) · [Evaluación de recuperación](https://github.com/lucianoLattante/knowledgeai/blob/046993307578b52b4dcba5f61f9362d7951e9a82/docs/RETRIEVAL_EVALUATION.md)
 
 **[Portfolio web](https://lucianolattante.github.io/portfolio-web/)**  
-Portfolio bilingüe con CV descargable y referencias a código y pruebas. [Repositorio](https://github.com/lucianoLattante/portfolio-web) · [Verificación en main](https://github.com/lucianoLattante/portfolio-web/actions/runs/45421372027) · [Despliegue](https://github.com/lucianoLattante/portfolio-web/actions/runs/45432175655).
+Portfolio bilingüe con CV descargable y referencias a código y pruebas. [Repositorio](https://github.com/lucianoLattante/portfolio-web) · [Verificación en main](https://github.com/lucianoLattante/portfolio-web/actions/runs/45453650710) · [Despliegue](https://github.com/lucianoLattante/portfolio-web/actions/runs/45454762853).
 
 ## Proyectos colaborativos
 
@@ -43,7 +43,7 @@ Mi contribución registrada incluye [esquemas Swagger](https://github.com/lucian
 **[Aplicación de reclutamiento](https://github.com/lucianoLattante/Reclutamiento)**  
 Proyecto colaborativo anterior con Java/Spring MVC, perfiles de empleadores y candidatos. Se conserva como evidencia de aprendizaje.
 
-Mantenimiento reciente de OT167: [documentación](https://github.com/lucianoLattante/OT167-Java-server/pull/1) y [autenticación y control de propietario](https://github.com/lucianoLattante/OT167-Java-server/pull/2). Estos cambios de mantenimiento ya fueron integrados.
+El mantenimiento reciente de OT167 incluye documentación, controles de autenticación y propietario, y validaciones de arranque de la demo y de carga de imágenes. [Documentación](https://github.com/lucianoLattante/OT167-Java-server/pull/1) · [Autenticación y propietario](https://github.com/lucianoLattante/OT167-Java-server/pull/2) · [Demo y cargas](https://github.com/lucianoLattante/OT167-Java-server/pull/3)
 
 ## Enfoque técnico
 
