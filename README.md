@@ -33,7 +33,7 @@ Java 21 and Spring Boot API backed by PostgreSQL, with immutable postings, idemp
 Java 21 API using Spring AI and pgvector. Ranking is scoped to the authenticated tenant and owner, and the offline provider returns cited excerpts. The PostgreSQL suite covers citation isolation, abstention, and competing uploads for the last slot in a configurable per-owner document limit. [CI](https://github.com/lucianoLattante/knowledgeai/actions/runs/45620226691) · [Retrieval evaluation](https://github.com/lucianoLattante/knowledgeai/blob/046993307578b52b4dcba5f61f9362d7951e9a82/docs/RETRIEVAL_EVALUATION.md)
 
 **[Portfolio website](https://lucianolattante.github.io/portfolio-web/en/)**  
-Bilingual portfolio and downloadable résumé, with links to source and test evidence. [Repository](https://github.com/lucianoLattante/portfolio-web) · [Main branch verification](https://github.com/lucianoLattante/portfolio-web/actions/runs/45453650710) · [Deployment](https://github.com/lucianoLattante/portfolio-web/actions/runs/45454762853).
+Bilingual portfolio and downloadable résumé, with links to source and test evidence. [Repository](https://github.com/lucianoLattante/portfolio-web) · [Main branch verification](https://github.com/lucianoLattante/portfolio-web/actions/runs/45678046381) · [Deployment](https://github.com/lucianoLattante/portfolio-web/actions/runs/45678373299).
 
 ## Selected collaborative work
 
